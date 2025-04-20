@@ -75,24 +75,36 @@ h5 {
 
 /* Header Logo Cart */
 .header {
-    display: flex;
     background-color: #ff6699;
     text-align: left;
     position: relative;
     width: 100%;
-    height: 90px; 
+    height: 110px; 
+}
+
+.header input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 3px;
+    border-style: solid;
+    border-color: #ff0066;
+    margin-top: 6px;
+    margin-right: 70px;
+    font-size: 14px;
 }
 
 .logo {
-    position: relative;
-    top: -50px;
-    right: 70px;
+    display: flex;
+    position: inherit;
+    top: -5px;
+    left: -55px;
 }
 
 .logo img {
-    width: 380px;
+    list-style-position: inside;
+    width: 100%;
+    max-width: 360px;
     height: auto;
-    display: block;
 }
 
 .cart {
@@ -109,15 +121,18 @@ h5 {
 
 
 /* Navigation */
-.topnav {
+nav.topnav {
+    display: block;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     background-color: #ff0066;
     text-align: center;
-    width: 100%;
 }
 
 .topnav ul {
     list-style-type: none;
+    background-color: #ff0066;
     margin: 0;
     padding: 0;
     display: flex;
@@ -125,24 +140,25 @@ h5 {
 }
 
 .topnav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 5px;
+    position: relative;
 }
 
 .topnav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 40px;
+    padding: 10px 30px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.8em;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.topnav ul li a:hover {
+.topnav ul li a:hover,
+.topnav ul li:hover > a {
     background-color: #ff6699;
-    border-radius: 0px;
 }
 
 .topnav ul li ul {
@@ -152,19 +168,16 @@ h5 {
     padding: 1px;
     border-radius: 0px 0px 4px 4px;
     z-index: 2;
+    min-width: 180px;
 }
 
 .topnav ul li:hover ul {
     display: block;
-    position: absolute;
-    background-color: #ff0066;
-    padding: 1px;
-    border-radius: 0px 0px 10px 10px;
-    line-height: 11px;
 }
 
 .topnav ul li ul li {
     padding: 5px 14px;
+    white-space: nowrap;
 }
 
 .topnav ul li ul li a {
@@ -177,12 +190,8 @@ h5 {
 
 .active {
     background-color: #ff6699;
-    border-image-outset;
-    border-left: 5px;
-    border-left-style: solid;
-    border-right: 5px;
-    border-right-style: solid;
-    border-color: #ffcc00;
+    border-left: 5px solid #ffcc00;
+    border-right: 5px solid #ffcc00;
 }
 
 
@@ -238,41 +247,57 @@ h5 {
 .info {
     display: flex;
     flex-direction: column; 
-    justify-content: flex-start; 
     align-items: center; 
-    text-align: left;
+    text-align: center;
     padding: 0px;
     border-radius: 10px;
-    width: 25%;
+    width: 350px;
     min-width: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
     margin-top: 30px;
     background: #fff;
     padding: 15px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.17);
 }
 
 .info img {
-    width: 375px;
+    list-style-position: inside;
+    width: 95%;
     height: auto;
     border-radius: 5px;
     margin-right: 0px;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .info-text {
-    display: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    max-height: 450px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
-    padding: 25px;
-    padding-bottom: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 2;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    z-index:2;
     text-align: center;
+    border-right: 12px;
+    border-right-color: #ff6699;
+    border-right-style: solid;
+    border-bottom: 12px;
+    border-bottom-color: #ff6699;
+    border-bottom-style: solid;
+    border-left: 12px;
+    border-left-color: #ffcc00;
+    border-left-style: solid;
+    border-top: 12px;
+    border-top-color: #ffcc00;
+    border-top-style: solid;
+    border-radius: 5px;
 }
 
 .info-text h2 {
@@ -282,85 +307,26 @@ h5 {
     font-family: 'Fredoka', sans-serif;
     line-height: 1;
     margin-bottom: 15px;
-    margin-top: -50px;
 }
 
 .info-text p {
     font-size: 16px;
 }
 
-.who-we-are {
-    width: 210px;
-    height: auto;
-    position: relative;
-    right: 301px;
-    bottom: 405px;
-    margin-bottom: -900px;
-    z-index: 1; 
-    border-radius: 1200px;
-}
-
-.who-we-are img {
-    border-radius: 10px;
-}
-
-.our-juice {
-    width: 210px;
-    height: auto;
-    position: relative;
-    right: 85px;
-    bottom: 405px;
-    margin-bottom: -900px;
-    z-index: 1;
-}
-
-.our-juice img {
-    border-radius: 10px;
-}
-
-.our-promise {
-    width: 210px;
-    height: auto;
-    position: relative;
-    left: 131px;
-    bottom: 405px;
-    margin-bottom: -900px;
-    z-index: 1;
-}
-
-.our-promise img{
-    border-radius: 10px;
-}
-
 .info-text a {
-    position: relative;
-    left: 0px;
-    font-weight: 500;
+    align-items: flex-end;
+    vertical-align: bottom;
+    height: auto;
+    margin-right: 0px;
+    font-weight: 600;
     font-family: 'Fredoka', sans-serif;
-    color:floralwhite;
-    background-color: #ff6600;
+    color: floralwhite;
+    background-color: rgb(247, 136, 7);
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
-.ourjuice {
-    position: relative;
-    bottom: -35px;
-    left: 245px;
-}
 
-.about {
-    position: relative;
-    bottom: -3px;
-    left: 240px;
-}
-
-.promise {
-    position: relative;
-    bottom: -8px;
-    left: 240px;
-
-}
 
 
 /* About Content */
@@ -368,6 +334,7 @@ h5 {
     background-color: #e2e2e2;
     margin-bottom: -165px;
 }
+
 .flex-about h3{
     position: relative;
     left: 695px;
@@ -380,6 +347,7 @@ h5 {
     display: flex;
     flex-direction: row; 
     justify-content: flex-start; 
+    width: 100%;
     align-items: center; 
     text-align: left;
     margin-top: -85px;
@@ -395,7 +363,7 @@ h5 {
     margin-top: 120px;
     margin-bottom: 120px;
     padding: 50px;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 500;
     color: #000;
     line-height: 1.8;
@@ -404,7 +372,7 @@ h5 {
 }
 
 .collage {
-    width: 1000px;
+    width: 65%;
     height: auto;
     position: relative;
     left: -75px;
@@ -475,7 +443,8 @@ h5 {
 }
 
 .flavors-row {
-    width: 19%;
+    width: 285px;
+    flex-wrap: wrap;
     height: auto;
     background-color: white;
     padding-bottom: 10px;
@@ -521,7 +490,8 @@ h5 {
 }
 
 .flavors-row2 {
-    width: 19%;
+    width: 285px;
+    flex-wrap: wrap;
     height: auto;
     background-color: white;
     padding-bottom: 10px;
@@ -567,7 +537,8 @@ h5 {
 }
 
 .flavors-row3 {
-    width: 19%;
+    width: 285px;
+    flex-wrap: wrap;
     height: auto;
     background-color: white;
     padding-bottom: 10px;
@@ -728,7 +699,7 @@ h5 {
 .flex-nutrition-main {
     display: flex;
     flex-direction: row; 
-    justify-content: flex-start; 
+    justify-content: center; 
     align-items: center; 
     text-align: left;
     background-color: #fff;
@@ -747,20 +718,41 @@ h5 {
     margin-bottom: 50px;
 }
 
+.ingredients h3 {
+    font-size: 35px;
+    margin: 25px;
+}
+
+.ingredients li {
+    width: 390px;
+    margin: 10px;
+}
+
 .vitamins {
     position: relative;
-    left: -150px;
+    left: -225px;
+    width: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
 }
 
-.ingredients h3 {
-    font-size: 35px;
+
+
+.vitamins li {
+    width: 390px;
+    margin: 10px;
 }
 
 .vitamins h3 {
     font-size: 35px;
+    margin: 25px;
+}
+
+.kids-beverage img {
+    position: relative;
+    left: 200px;
+    width: px;
 }
 
 .nutrition-main {
@@ -771,18 +763,38 @@ h5 {
 
 .nutrition-faqs img{
     position: relative;
-    right: 100px;
-    width: 600px;
+    right: 50px;
+    width: 550px;
     margin: 50px;
+}
+
+.nutrition-guide {
+    margin: 25px;
+    margin-bottom: 75px;
+    background-color: #fff;
+    border-right: 12px;
+    border-right-color: #ff6699;
+    border-right-style: solid;
+    border-bottom: 12px;
+    border-bottom-color: #ff6699;
+    border-bottom-style: solid;
+    border-left: 12px;
+    border-left-color: #ffcc00;
+    border-left-style: solid;
+    border-top: 12px;
+    border-top-color: #ffcc00;
+    border-top-style: solid;
+    border-radius: 5px;
 }
 
 .nutrition-guide h3 {
     font-size: 45px;
-    margin: 75px;
+    margin: 50px;
+    margin-bottom: 50px;
 }
 
 .nutrition-guide h1 {
-    margin: 75px;
+    margin: 50px;
 }
 
 /* Footer */
@@ -837,3 +849,93 @@ h5 {
     width: 200px; 
     height: auto;
 }
+
+
+@media (max-width: 1500px) {
+    .about-content p {
+        font-size: 17px;
+        font-weight: 500;
+        color: #000;
+        line-height: 1.8;
+    }
+    
+@media (max-width: 1200px) {
+    .about-content p {
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+        line-height: 1.8;
+    }
+
+@media (max-width: 1150px) {
+    .logo img {
+        list-style-position: inside;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .about-content p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #000;
+        line-height: 1.8;
+    }
+
+
+@media (max-width: 790px) {
+    
+    /* Navigation */
+    .topnav ul {
+        list-style-type: none;
+        background-color: #ff0066;
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: center;
+        }
+    
+    .topnav ul li {
+        margin: 0px 0px;
+        position: relative;
+        border-bottom: 5px;
+        border-bottom-color: #ffcc00;
+        border-bottom-style: solid;
+    }
+    
+    .topnav ul li a {
+        font-size: 0.8em;
+        }
+    
+    .topnav ul li ul li {
+        display: none;
+    }
+    
+    .active {
+        background-color: #ff6699;
+    }
+    
+    /* Logo */
+    .logo {
+        display: flex;
+        position: inherit;
+        top: 5px;
+        left: -45px;
+    }
+    
+    .logo img {
+        width: 100%;
+        width: 500px;
+        height: auto;
+    }
+    
+    /* Main Content */
+    .info {
+        margin-bottom: -45px;
+        margin-top: 20px;
+        }
+    
+    /* Footer */
+    .footer {
+        margin-top: 75px;
+        }
