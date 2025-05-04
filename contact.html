@@ -1,0 +1,410 @@
+<!-- 
+	Student Name: Harrison Grimberg
+	File Name: index.html
+	Date: March 11th, 2025 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Juice</title>
+    <meta name="keywords" content="Juices, Healthy, Daycare, Preschool">
+    <meta name="author" content="Harrison Grimberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:\Users\hmgri\OneDrive\Desktop\Penny Juice\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        .intro {
+            margin-top: 15px;
+        }
+        
+        intro h3 {
+            text-align: center;
+            font-size: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000;
+        }
+        
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            padding: 30px;
+            background-color: #fff;
+            justify-content: center; 
+            border: 5px solid #ff0066;
+            border-radius: 10px;
+            font-family: Fredoka;
+            font-size: 18px;
+            font-weight: 600;
+            gap: 50px;
+            max-width: 950px;
+        }
+        
+        .action-form {
+            max-width: 400px;
+            min-width: 300px;
+            flex: 1 1 400px;
+        }
+        
+        .contact-us {
+            max-width: 400px;
+            min-width: 300px;
+            flex: 1 1 400px;
+            padding-top: 20px;    
+        }
+        
+        .contact-us h3 {
+            text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000;
+            font-size: 50px;
+            margin-bottom: 45px;
+            font-size: 40px;
+        }
+        
+        .intro {
+            font-weight: 500;
+            line-height: 1.25;
+            margin-top: 25px;
+        }
+        
+        .phone-number {
+            display: flex;
+        }
+        
+        .phone-number img {
+            width: 25px;
+            height: 25px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        
+        .phone {
+            font-weight: 500;
+            line-height: 1.25;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        
+        .email-flexbox {
+            display: flex;
+        }
+        
+        .email-flexbox img {
+            width: 25px;
+            height: 25px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        
+        .contact-email {
+            font-weight: 500;
+            line-height: 1.25;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        
+        .address-flexbox {
+            display: flex;
+        }
+        
+        .address-flexbox img {
+            width: 25px;
+            height: 25px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        
+        .address {
+            font-weight: 500;
+            line-height: 1.25;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        
+        input[type=text], select, .fname, .email, .subject, .message {
+            width: 100%;
+            border: solid 5px #ff0066;
+        }
+        
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 25px 0;
+            margin-bottom: 20px;
+            display: inline-block;
+            border: 5px solid #ff0066;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Fredoka;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 5px;
+        }
+        
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 25px 0;
+            margin-bottom: 50px;
+            display: inline-block;
+            border: 5px solid #ff0066;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .submit-container {
+            display: flex;
+            justify-content: flex-end; 
+        }
+        
+        input[type=submit] {
+            width: 35%;
+            float: right;
+            background-color: #ff6600;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: Fredoka;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #e65e03;
+        }
+        
+        .fname {
+            width: 100%;
+            height: 45px;
+            padding: 12px 20px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            border: 5px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Fredoka;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 0.5;
+            resize: none; 
+        }
+        
+        .email {
+            width: 100%;
+            height: 45px;
+            padding: 12px 20px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            border: 5px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Fredoka;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 0.5;
+            resize: none; 
+        }
+        
+        .subject {
+            width: 100%;
+            height: 45px;
+            padding: 12px 20px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            border: 5px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Fredoka;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 0.5;
+            resize: none; 
+        }
+        
+        .message {
+            width: 100%;
+            height: 200px;
+            padding: 12px 20px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            border: 5px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Fredoka;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            resize: none; 
+        }
+        
+        .form-background {
+            background-image: url("images/Contact-background.png"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        /* Media Queries */        
+        @media (max-width: 768px) {
+            .form {
+                flex-direction: column;
+                padding: 20px;
+                gap: 30px;
+            }
+
+            .contact-us h3 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            input[type=submit] {
+                width: 100%;
+            }
+
+            .submit-container {
+                justify-content: center;
+            }
+
+            .intro {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%
+            }
+            
+            .phone-number, .email-flexbox, .address-flexbox {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .phone, .contact-email, .address {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+        
+        input[type=text], select, .fname, .email, .subject, .message {
+            width: 100%;
+            border: solid 5px #ff6699;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+            
+        <!-- Header/Logo -->
+        <div class="header">
+            <input type="text" placeholder="Search..">
+            <div class="logo">
+                <img src="images/Updated-Logo2.gif" alt="Penny Juice Logo">
+            </div>
+            <div class="cart">
+                <a href="cart.html"><img src="images/Cart.png" alt="Shopping Cart"></a>
+            </div>
+        </div>
+            
+        <!-- Nav -->   
+        <div class="content"> 
+            <div class="topnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="flavors.html">Our Juice</a> 
+                        <ul>
+                            <li><a href="StrawberrySplash.html">Strawberry Splash</a></li>
+                            <li><a href="StrawberryKiwi.html">Strawberry Kiwi</a></li>
+                            <li><a href="BlueberrySplash.html">Blueberry Splash</a></li>
+                            <li><a href="OrangeBlast.html">Orange Blast</a></li>
+                            <li><a href="AwesomeGrape.html">Awesome Grape</a></li>
+                            <li><a href="TropicalFruit.html">Tropical Fruit</a></li>
+                            <li><a href="StrawberryBanana.html">Strawberry Banana</a></li>
+                            <li><a href="PeachParadise.html">Peach Paradise</a></li>
+                            <li><a href="StrawberryMelon.html">Strawberry Melon</a></li>
+                            <li><a href="AppleJuice.html">Apple Juice</a></li>
+                            <li><a href="BerryJuice.html">Berry Juice</a></li>
+                            <li><a href="Lemonade.html">Lemonade</a></li>
+                        </ul></li>
+                    <li><a href="nutrition.html">Nutrition & FAQs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <Intro><h3>Contact Us And Become A New Member</h3></Intro>
+        
+        <div class="form-background">
+            <div class="form">
+                <div class="contact-us">
+                    <h3>Contact</h3>
+                    <p class="intro">Feel free to use the form or drop us an email. Old-fashioned phonecalls work too!</p>
+                    <div class="phone-number">
+                        <img src="images/phone.png">
+                        <p class="phone">PHONE: 563-386-1999</p>
+                    </div>
+                    <div class="email-flexbox">
+                        <img src="images/Email.png">
+                        <p class="contact-email">EMAIL: pennyjuice@hotmail.com</p>
+                    </div>
+                    <div class="address-flexbox">
+                        <img src="images/Location.png">
+                        <p class="address">915 40th Ave Bettendorf, <br>IA 52722</p>
+                    </div>
+                </div>
+                <div class="action-form">
+                <form action="/action_page.php">
+                    <label for="fname">Your Name</label>
+                        <textarea id="fname" class="fname" placeholder="Harrison Grimberg"></textarea>
+                    <label for="email">Enter Your Email</label>
+                        <textarea id="email" class="email" placeholder="address@domain.com"></textarea>
+                    <label for="subject">Subject</label>
+                        <textarea id="subject" class="subject" placeholder="Enter Subject"></textarea>
+                    <label for="message">Your Message</label>
+                        <textarea id="message" class="message" placeholder="Type Your Message Here"></textarea>
+                    <div class="submit-container">
+                        <input type="Submit" value="Submit"> 
+                    </div>  
+                </form>
+                </div>
+            </div>
+        </div>              
+                    
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footerbox">
+                Copyright &copy; Penny Juice 2025 - 2026
+            <div class="logo-footer">
+                <img src="images/Updated-Logo2.gif" alt="Penny Juice Logo" width="300px">
+            </div>
+            <div class="social">
+                <img src="images/SocialMedia.png" alt="Social">
+            </div>
+            <div class="payment-method">
+                <img src="images/Credit-Card-Logos.png" alt="Payment Method">
+                </div>
+            </div>
+        </div>                
+    </div> 
+      
+</body>
+</html>
