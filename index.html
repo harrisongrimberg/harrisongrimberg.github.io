@@ -1,0 +1,175 @@
+<!-- 
+	Student Name: Harrison Grimberg
+	File Name: index.html
+	Date: March 3rd, 2025 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Juice</title>
+    <meta name="keywords" content="Juices, Healthy, Daycare, Preschool">
+    <meta name="author" content="Harrison Grimberg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:\Users\hmgri\OneDrive\Desktop\Penny Juice\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+            
+        <!-- Header/Logo -->
+        <div class="header">
+            <input type="text" placeholder="Search..">
+            <div class="logo">
+                <img src="images/Updated-Logo2.gif" alt="Penny Juice Logo" width="300px">
+            </div>
+            <div class="cart">
+                <a href="cart.html"><img src="images/Cart.png" alt="Shopping Cart"></a>
+            </div>
+        </div>
+            
+        <!-- Nav -->   
+        <div class="content"> 
+            <div class="topnav">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="flavors.html">Our Juice</a> 
+                        <ul>
+                            <li><a href="StrawberrySplash.html">Strawberry Splash</a></li>
+                            <li><a href="StrawberryKiwi.html">Strawberry Kiwi</a></li>
+                            <li><a href="BlueberrySplash.html">Blueberry Splash</a></li>
+                            <li><a href="OrangeBlast.html">Orange Blast</a></li>
+                            <li><a href="AwesomeGrape.html">Awesome Grape</a></li>
+                            <li><a href="TropicalFruit.html">Tropical Fruit</a></li>
+                            <li><a href="StrawberryBanana.html">Strawberry Banana</a></li>
+                            <li><a href="PeachParadise.html">Peach Paradise</a></li>
+                            <li><a href="StrawberryMelon.html">Strawberry Melon</a></li>
+                            <li><a href="AppleJuice.html">Apple Juice</a></li>
+                            <li><a href="BerryJuice.html">Berry Juice</a></li>
+                            <li><a href="Lemonade.html">Lemonade</a></li>
+                        </ul></li>
+                    <li><a href="nutrition.html">Nutrition & FAQs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+            
+        <!-- Slider -->
+        <!--<div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/Main-Slider%202.jpg" alt="Healthy Choice" width="100%" height="auto"></div>
+                <div class="slide"><img src="images/Juicy-Splash%202.jpg" alt="Healthy Choice" width="100%" height="auto"></div>    
+                <div class="slide"><img src="images/Kids%20drinking%202.jpg" alt="Healthy Choice" width="100%" height="auto"></div>
+                <div class="slide"><img src="images/Children%20Drinking%202.jpg" alt="Healthy Choice" width="100%" height="auto"></div>
+            </div>
+        </div>-->
+        
+        
+        <!-- Slider Option 2 -->
+        <div class="carousel-container">
+        
+            <!-- Radio buttons -->
+            <input type="radio" name="carousel" id="cslide1" checked>
+            <input type="radio" name="carousel" id="cslide2">
+            <input type="radio" name="carousel" id="cslide3">
+            <input type="radio" name="carousel" id="cslide4">
+
+            <!-- Slides -->
+            <div class="carousel-slides">
+                <div class="carousel-slide" style="background-image: url('images/Main-Slider2.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('images/Juicy-Splash 2.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('images/Kids drinking 2.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('images/Children Drinking 2.jpg');"></div>
+            </div>
+
+            <!-- Arrows -->
+            <div class="carousel-arrows">
+                <label for="cslide4" class="prev cs1">&#10094;</label>
+                <label for="cslide2" class="next cs1">&#10095;</label>
+
+                <label for="cslide1" class="prev cs2">&#10094;</label>
+                <label for="cslide3" class="next cs2">&#10095;</label>
+
+                <label for="cslide2" class="prev cs3">&#10094;</label>
+                <label for="cslide4" class="next cs3">&#10095;</label>
+
+                <label for="cslide3" class="prev cs4">&#10094;</label>
+                <label for="cslide1" class="next cs4">&#10095;</label>
+            </div>
+
+            <!-- Dots -->
+            <div class="carousel-dots">
+                <label for="cslide1"></label>
+                <label for="cslide2"></label>
+                <label for="cslide3"></label>
+                <label for="cslide4"></label>
+            </div>
+            
+        </div>
+       
+       
+        <!-- Main -->
+        <div class="flex-container">
+            <div class="info">
+                <img src="images/Daycare-Worker.jpg" alt="Healthy Choice">
+                <div class="info-text">
+                    <h2>Who We Are</h2>
+                    <h1>Providing delicious, high-quality fruit juice concentrates made for kids. Offering cost-effective solutions for childcare centers and preschools. Ensuring easy mixing and serving for busy providers. Trusted by professionals nationwide.</h1>
+                    <br>
+                    <div class="main-links">
+                        <a href="about.html">Learn More!</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info">
+                <img src="images/Fruit-Juice2.jpg" alt="Sunset">
+                <div class="info-text">
+                    <h2>Our Juice</h2>
+                    <h1>Penny Juice offers a variety of delicious flavors kids love, including fruity blends like strawberry kiwi, tropical fruit, white grape, berry, and more—sweet, refreshing, and perfect for any occasion! It's juice that's fun to drink and easy to enjoy</h1>
+                    <br>
+                    <div class="main-links">
+                        <a href="flavors.html">Order Now!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="images/Kid-Handshake2.0.jpg" alt="Kids enjoying juice">
+                <div class="info-text">
+                    <h2>Our Promise</h2>
+                    <h1>At Penny Juice, we promise to provide high-quality, nutritious, and affordable fruit juice concentrates designed for kids. We are committed to great taste, convenience, and ensuring a hassle-free experience for childcare providers.</h1>
+                    <br>
+                    <div class="main-links">
+                        <a href="nutrition.html">Learn More!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footerbox">
+                <h1>Copyright &copy; Penny Juice 2025 - 2026</h1>
+                <div class="logo-footer">
+                    <img src="images/Updated-Logo2.gif" alt="Penny Juice Logo" width="300px">
+                </div>
+                <div class="social">
+                    <img src="images/SocialMedia.png" alt="Social">
+                </div>
+                <div class="payment-method">
+                    <img src="images/Credit-Card-Logos.png" alt="Payment Method">
+                </div>
+            </div>
+        </div>                
+    </div> 
+      
+</body>
+</html>
